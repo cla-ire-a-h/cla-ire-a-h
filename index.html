@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claire Aguilar-Hwang</title>
+
+  <style>
+    :root {
+      --blue: #2563eb;
+      --light-blue: #dbeafe;
+      --text: #1f2937;
+      --gray: #6b7280;
+      --bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--gray);
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    /* HERO */
+    header {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--gray);
+      font-size: 1.1rem;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .btn.secondary {
+      background: var(--light-blue);
+      color: var(--blue);
+    }
+
+    /* HEADSHOT */
+    .headshot {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--light-blue);
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-left: 4px solid var(--blue);
+      padding-left: 0.6rem;
+    }
+
+    .card {
+      margin-bottom: 1.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card span {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill {
+      background: var(--light-blue);
+      color: var(--blue);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    /* CONTACT */
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* ANIMATIONS */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      text-align: center;
+      margin: 3rem 0;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-container">
+      <strong>CAH</strong>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#experience">Experience</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="fade">
+    <div class="hero-text">
+      <h1>Claire Aguilar-Hwang</h1>
+      <p>Student at Cornell University Dyson School of Applied Economics and Management</p>
+      
+      <div class="cta">
+        <a class="btn" href="mailto:cia35@cornell.edu">Email</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/claire-aguilar-hwang-448144257" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <img src="headshot.jpg" alt="Claire Aguilar-Hwang headshot" class="headshot">
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade">
+    <h2>About</h2>
+    <p>
+      I am a student at Cornell University's Dyson School of Applied Economics and Management 
+      concentrating in Accounting and Finance. I am interested in financial analysis, auditing, 
+      and tax strategy, with hands-on experience through internships and coursework.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="fade">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Excel</div>
+      <div class="skill">PowerPoint</div>
+      <div class="skill">Word</div>
+      <div class="skill">Google Workspace</div>
+      <div class="skill">Python (Basic)</div>
+      <div class="skill">Spanish (Basic)</div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="fade">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Cornell University - Dyson School</h3>
+      <span>B.S. Applied Economics and Management | GPA: 3.9 | May 2026</span>
+      <p>Concentrations: Accounting, Finance</p>
+    </div>
+  </section>
+
+  <!-- COURSEWORK -->
+  <section id="coursework" class="fade">
+    <h2>Coursework</h2>
+    <ul>
+      <li>Auditing and Assurance</li>
+      <li>Corporate Financial Reporting I & II</li>
+      <li>Corporate Taxation</li>
+      <li>Systems Analytics Accounting</li>
+      <li>Managerial Accounting</li>
+      <li>Corporate Finance</li>
+      <li>Spreadsheet Modeling</li>
+    </ul>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="fade">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>PricewaterhouseCoopers – Real Estate Audit Intern</h3>
+      <span>June 2025 – August 2025</span>
+      <ul>
+        <li>Built Excel tools using VLOOKUP to analyze financial changes</li>
+        <li>Validated 10-Q data for SEC filings</li>
+        <li>Tested lease validity and tenant accuracy</li>
+        <li>Recalculated tax balances and identified variances</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Andersen – M&A Tax Intern</h3>
+      <span>June 2024 – July 2024</span>
+      <ul>
+        <li>Projected QSBS tax savings scenarios</li>
+        <li>Presented Supreme Court tax case analysis</li>
+        <li>Summarized Private Letter Rulings</li>
+        <li>Analyzed buy-sell agreements for compliance</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Cornell Diversity on the Street</h3>
+      <span>Finance Analyst</span>
+      <ul>
+        <li>Built financial modeling and valuation skills</li>
+        <li>Created Salesforce stock pitch with 11% upside</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership" class="fade">
+    <h2>Leadership</h2>
+
+    <div class="card">
+      <h3>Head Teaching Assistant – Corporate Financial Reporting I</h3>
+      <ul>
+        <li>Supported course logistics and grading coordination</li>
+        <li>Assisted students with coursework and exam preparation</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Treasurer – Cornell E.Motion Dance Club</h3>
+      <ul>
+        <li>Managed $6,000 budget and financial operations</li>
+        <li>Led budgeting and event production logistics</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="mailto:cia35@cornell.edu">Email</a>
+      <a href="https://www.linkedin.com/in/claire-aguilar-hwang-448144257" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Claire Aguilar-Hwang
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const faders = document.querySelectorAll('.fade');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+      });
+    }, { threshold: 0.1 });
+
+    faders.forEach(f => observer.observe(f));
+  </script>
+
+</body>
+</html>
